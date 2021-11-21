@@ -10,10 +10,10 @@ class LoginPage extends StatelessWidget {
         color: Colors.white,
         child: Column(
           children: [
-            Image.asset(
-              "assets/images/login_imge.png",
-              fit: BoxFit.cover,
-            ),
+            Image.asset("assets/images/login_imge.png"
+                // "assets/images/login_imge.png",
+                // fit: BoxFit.cover,
+                ),
             SizedBox(
               height: 20.0,
             ),
