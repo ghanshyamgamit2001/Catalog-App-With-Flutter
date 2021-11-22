@@ -14,8 +14,6 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "Catalog App",
-          
-          // style: TextStyle(color: Colors.black) This is replicated with textTheme
         ),
       ),
       body: Center(
