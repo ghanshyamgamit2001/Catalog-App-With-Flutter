@@ -8,14 +8,21 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final int days = 30;
-    final String name = "Akshar";
+    final String name = "Ghanshyam";
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalog App"),
+        title: Text(
+          "Catalog App",
+          
+          // style: TextStyle(color: Colors.black) This is replicated with textTheme
+        ),
       ),
       body: Center(
-        child: Text("Welcome to Flutter $days devlopment in 30 days by $name"),
+        child: Container(
+          child:
+              Text("Welcome to Flutter $days devlopment in 30 days by $name"),
+        ),
       ),
       // ignore: prefer_const_constructors
       drawer: MyDrawer(),
