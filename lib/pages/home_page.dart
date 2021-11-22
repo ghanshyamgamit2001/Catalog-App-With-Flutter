@@ -1,3 +1,4 @@
+import 'package:catalog/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 // ignore: use_key_in_widget_constructors
@@ -17,7 +18,7 @@ class HomePage extends StatelessWidget {
         child: Text("Welcome to Flutter $days devlopment in 30 days by $name"),
       ),
       // ignore: prefer_const_constructors
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
