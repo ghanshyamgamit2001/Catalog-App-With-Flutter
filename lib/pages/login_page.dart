@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 // ignore: use_key_in_widget_constructors
 class LoginPage extends StatefulWidget {
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
                 Image.asset(
                   "assets/images/login_imge.png",
                   fit: BoxFit.cover,
-                  height: 300,
+                  // height: 300,
                 ),
                 SizedBox(
                   height: 20.0,

@@ -8,7 +8,7 @@ import 'package:flutter/services.dart';
 // ignore: use_key_in_widget_constructors
 class HomePage extends StatefulWidget {
   @override
-  State<HomePage> createState() => _HomePageState();
+  _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: (CatalogModel.items !=null && CatalogModel.items.isNotEmpty)? ListView.builder(
+        child: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)? ListView.builder(
           itemCount: CatalogModel.items.length,
           itemBuilder: (context, index)  => ItemWidgets(
               item: CatalogModel.items[index],
