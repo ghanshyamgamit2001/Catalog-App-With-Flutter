@@ -1,6 +1,8 @@
 import 'package:catalog/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
+//* Day 11 we lerned about context, constrains
+
 // ignore: use_key_in_widget_constructors
 class HomePage extends StatelessWidget {
   // const HomePage({Key? key}) : super(key: key);
