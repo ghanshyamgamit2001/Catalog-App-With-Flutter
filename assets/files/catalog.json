@@ -17,11 +17,11 @@
         },
         {
             "id": 3,
-            "name": "Pixle 5",
-            "desc": "Google Pixel phone 5th generation",
+            "name": "Galaxy M32",
+            "desc": "Samsung Galaxy M32 2021 edition",
             "price": 699,
             "color": "#00ac51",
-            "image": "https://m.media-amazon.com/images/I/81AqwYyZjzL._SX679_.jpg"
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-m325fzkcins/gallery/in-galaxy-m32-6gb-ram-sm-m325fzkcins-462256897?$684_547_PNG$"
         },
         {
             "id": 4,
