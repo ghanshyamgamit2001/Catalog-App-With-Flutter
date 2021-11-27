@@ -1,9 +1,9 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: deprecated_member_use
 
 import 'package:catalog/utils/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:velocity_x/velocity_x.dart';
 
-// ignore: use_key_in_widget_constructors
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
@@ -31,7 +31,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-        color: Colors.white,
+        color: context.canvasColor,
         child: SingleChildScrollView(
           child: Form(
             key: _formKey,
@@ -40,7 +40,6 @@ class _LoginPageState extends State<LoginPage> {
                 Image.asset(
                   "assets/images/login_imge.png",
                   fit: BoxFit.cover,
-                  // height: 300,
                 ),
                 SizedBox(
                   height: 20.0,
@@ -62,12 +61,12 @@ class _LoginPageState extends State<LoginPage> {
                     children: [
                       TextFormField(
                         decoration: InputDecoration(
-                          hintText: "Enter Username",
+                          hintText: "Enter username",
                           labelText: "Username",
                         ),
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return "Username canot be empty";
+                            return "Username cannot be empty";
                           }
 
                           return null;
@@ -80,12 +79,12 @@ class _LoginPageState extends State<LoginPage> {
                       TextFormField(
                         obscureText: true,
                         decoration: InputDecoration(
-                          hintText: "Enter Password",
+                          hintText: "Enter password",
                           labelText: "Password",
                         ),
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return "Password canot be empty";
+                            return "Password cannot be empty";
                           } else if (value.length < 6) {
                             return "Password length should be atleast 6";
                           }
@@ -96,9 +95,8 @@ class _LoginPageState extends State<LoginPage> {
                       SizedBox(
                         height: 40.0,
                       ),
-
                       Material(
-                        color: Colors.deepPurple,
+                        color: context.theme.buttonColor,
                         borderRadius:
                             BorderRadius.circular(changeButton ? 50 : 8),
                         child: InkWell(
@@ -124,7 +122,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                     ],
-                  ),
+                  ).p16(),
                 )
               ],
             ),
