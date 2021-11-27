@@ -4,6 +4,7 @@ import 'package:catalog/widgets/themes.dart';
 
 class CatalogImage extends StatelessWidget {
   final String image;
+
   const CatalogImage({
     Key? key,
     required this.image,
@@ -14,6 +15,6 @@ class CatalogImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.network(
       image,
-    ).box.rounded.p8.color(MyTheme.creamColor).make().p16().w40(context);
+    ).box.rounded.p8.color(context.canvasColor).make().p16().w40(context);
   }
 }
