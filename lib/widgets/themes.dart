@@ -30,7 +30,12 @@ class MyTheme {
         color: Colors.black,
         elevation: 0.0,
         iconTheme: IconThemeData(color: Colors.white),
-        titleTextStyle: TextStyle(),
+        textTheme: Theme.of(context).textTheme,
+
+        // if this code is not worked that time use it
+        // textTheme: Theme.of(context).textTheme(
+        // headline6:context.textTheme.headline6.copyWith(color: Colors.white)
+        // )
       ));
 
   //Colors
