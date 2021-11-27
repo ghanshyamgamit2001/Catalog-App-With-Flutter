@@ -2,8 +2,6 @@
 
 import 'package:catalog/utils/routes.dart';
 import 'package:flutter/material.dart';
-import 'package:velocity_x/src/extensions/context_ext.dart';
-import 'package:velocity_x/src/flutter/padding.dart';
 
 // ignore: use_key_in_widget_constructors
 class LoginPage extends StatefulWidget {
@@ -33,14 +31,14 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-        color: context.canvasColor,
+        color: Colors.white,
         child: SingleChildScrollView(
           child: Form(
             key: _formKey,
             child: Column(
               children: [
                 Image.asset(
-                  "assets/images/login_image.png",
+                  "assets/images/login_imge.png",
                   fit: BoxFit.cover,
                   // height: 300,
                 ),
@@ -88,8 +86,8 @@ class _LoginPageState extends State<LoginPage> {
                         validator: (value) {
                           if (value!.isEmpty) {
                             return "Password canot be empty";
-                          } else if (value.length < 8) {
-                            return "Password length should be atleast 8";
+                          } else if (value.length < 6) {
+                            return "Password length should be atleast 6";
                           }
 
                           return null;
@@ -98,9 +96,9 @@ class _LoginPageState extends State<LoginPage> {
                       SizedBox(
                         height: 40.0,
                       ),
+
                       Material(
-                        // ignore: deprecated_member_use
-                        color: context.theme.buttonColor,
+                        color: Colors.deepPurple,
                         borderRadius:
                             BorderRadius.circular(changeButton ? 50 : 8),
                         child: InkWell(
@@ -126,7 +124,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                     ],
-                  ).py16(),
+                  ),
                 )
               ],
             ),
