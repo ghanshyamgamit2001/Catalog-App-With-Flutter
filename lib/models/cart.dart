@@ -1,8 +1,16 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:catalog/models/catalogp.dart';
 
-// catalog field
 class CartModel {
-   late CatalogModel _catalog;
+  static final cartModel = CartModel._internal();
+
+  CartModel._internal();
+
+  factory CartModel() => cartModel;
+
+  // catalog field
+  late CatalogModel _catalog;
 
 // Collection of Ids - store Ids of each item
   final List<int> _itemIds = [];
