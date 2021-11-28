@@ -1,13 +1,12 @@
 import 'package:catalog/models/catalogp.dart';
 import 'package:catalog/pages/home_detail_page.dart';
-import 'package:catalog/widgets/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'add_to_cart.dart';
 import 'catalog_image.dart';
 
 class CatalogList extends StatelessWidget {
-  const CatalogList({Key? key}) : super(key: key);
+  // const CatalogList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +58,7 @@ class CatalogItem extends StatelessWidget {
                 alignment: MainAxisAlignment.spaceBetween,
                 buttonPadding: EdgeInsets.zero,
                 children: [
-                  "\$${catalog.price}".text.bold.make(),
+                  "\$${catalog.price}".text.bold.xl.make(),
                   AddToCart(catalog: catalog),
                 ],
               ).pOnly(right: 8.0)
